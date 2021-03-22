@@ -45,7 +45,7 @@ var buildDataLayer = function () {
         }
 
         // Order Placed Event
-        if (pageContext == 'orderconfirmation' && orderID) {
+        if (pageContext == 'orderconfirmation' || pageContext == 'order-confirmation' && orderID) {
             KlaviyoUtils = require('*/cartridge/scripts/utils/klaviyo/klaviyoUtils');
 
             currentOrder = orderMgr.getOrder(orderID);
